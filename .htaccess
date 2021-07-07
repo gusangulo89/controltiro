@@ -1,0 +1,24 @@
+#Inpedir que se muestren mis directorios
+
+Options All -Indexes
+
+#URL Amigables
+#Activar RewriteEngine
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+ErrorDocument 400 /sisan-v3/error
+ErrorDocument 403 /sisan-v3/error
+ErrorDocument 404 /sisan-v3/error
+ErrorDocument 500 /sisan-v3/error
+#RewriteRule ^(\w+)$ index.php?action=$1
+
+
+
+#Option All - Indexes
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
