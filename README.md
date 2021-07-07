@@ -3,13 +3,11 @@
 Usuario: Admin
 Password: admin123
 
-=============================
-Base de Datos
-=============================
+
+* Base de Datos *
 Se encuentra en la carpeta "bd"
 
-============================
-Archivo de configuración de conexión 
-a la base de datos
-============================
+
+* Archivo de configuración de conexión 
+a la base de datos*
 /config.php
